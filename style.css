@@ -15,17 +15,40 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-color: #121214;
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
-  text-align: center;
+  background: url(images/background.svg) no-repeat center/cover;
+  min-height: 812px;
+  height: 100vh;
+  margin-top: 100px;
+  position: relative;
+}
+
+.quebra {
+  background: url(images/quebra.svg);
+  border-bottom: 5rem;
+  position: absolute;
+  top: 50px;
+  height: 8px;
+  width: 80px;
+  right: 186px;
+  border-radius: 4px;
+}
+
+.faixa {
+  width: 64px;
+  height: 154px;
+  background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+  position: absolute;
+  top: -100px;
+  right: 194px;
+  z-index: 2;
 }
 
 .container {
-  max-width: 250px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -88,3 +111,10 @@ ul {
 
   justify-content: center;
 }
+
+ul li a  {
+height: 48px;
+width: 48px;
+background-color: #323238;
+}
+
